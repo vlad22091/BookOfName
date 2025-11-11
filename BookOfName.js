@@ -1,11 +1,12 @@
-const cs = require ('cs');
+const fs = require ('fs');
 
-const data = cs.readFileSync(
+const data = fs.readFileSync(
     'book.txt',
     {
         encoding: 'utf8',
         flag: 'r'
     }
 );
+
 
 console.log(data.replaceAll(" ", "Dozhdzhanyk Vladyslav"));
